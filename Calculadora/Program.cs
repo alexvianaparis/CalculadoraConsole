@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using System;
 
-namespace ConsoleApp1
+namespace Calculadora
 {
     class Program
     {
@@ -31,59 +32,29 @@ namespace ConsoleApp1
 
             escolha = Console.ReadLine();
 
-            //if (escolha.Length == 1)
-            //{
-            //    if (escolha.ToUpper() == "A")
-            //    {
-            //        Console.WriteLine($"A soma dos dois numeros é : { n1 + n2}");
-            //    }
-            //    else if (escolha.ToUpper() == "B")
-            //    {
-            //        Console.WriteLine($"A subtração dos dois numeros é : { n1 - n2}");
-            //    }
-            //    else if (escolha.ToUpper() == "C")
-            //    {
-            //        Console.WriteLine($"A multiplicação dos dois numeros é : { n1 * n2}");
-            //    }
-            //    else if (escolha.ToUpper() == "D")
-            //    {
-            //        Console.WriteLine($"A divisão dos dois numeros é : { n1 / n2}");
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("ERROR vc digitou uma opção invalida.");
-
-
-            //    }
-
-            //}
-            //else
-            //{
-            //    Console.WriteLine("ERROR.");
-            //}
-
-            //Condição SWtich
+          
             if (escolha.Length == 1)
             {
                 switch (escolha.ToUpper())
                 {
                     case "A":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 + n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Soma(n1,n2)}");
                         break;
                     case "B":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 - n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Subtração(n1,n2)}");
                         break;
                     case "C":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 * n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Multiplicação(n1,n2)}");
                         break;
                     case "D":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 / n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Divisão(n1,n2)}");
                         break;
 
                     default:
                         Console.WriteLine("FATAL ERROR! : Você escolheu uma opção invalida! Tente novamente");
                         break;
 
+                        //Alex Bobao mais uma vez
 
                 }
             }
