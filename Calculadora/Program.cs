@@ -1,6 +1,7 @@
-﻿using System;
+﻿
+using System;
 
-namespace ConsoleApp1
+namespace Calculadora
 {
     class Program
     {
@@ -37,16 +38,16 @@ namespace ConsoleApp1
                 switch (escolha.ToUpper())
                 {
                     case "A":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 + n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Soma(n1,n2)}");
                         break;
                     case "B":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 - n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Subtração(n1,n2)}");
                         break;
                     case "C":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 * n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Multiplicação(n1,n2)}");
                         break;
                     case "D":
-                        Console.WriteLine($"A soma dos dois numeros é : { n1 / n2}");
+                        Console.WriteLine($"A soma dos dois numeros é : { Operacoes.Divisão(n1,n2)}");
                         break;
 
                     default:
